@@ -1,0 +1,42 @@
+- Usar distribuições estáveis como CentOS, RedHat, SuseEnterprise
+- Usar o mínimo de programas para as configurações e depois remove-los quando possível 	
+- Balancear o risco com as aplicações a serem usadas
+- Particionamento de disco para facilitar recuperação de desastres
+- Particionamento de disco para aplicar proteção na partição usando o fstab (nosuid, noexec e etc)
+- Validar a assinatura digital de todos os programas
+- Analisar as permissões da partição de acordo com o serviço (samba, e-mail e etc)
+- Usar redundância de discos RAID ou LVM
+- Instalação mínima de pacotes e programas
+- Manter os serviços atualizadas
+- Desabilitar serviços desnecessários com systemctl
+- Criptografar as partições importantes com LUKs (arquivos importantes e swap)
+- Proteger GRUB com senha
+- Usar senhas fortes
+- Desabilitar ROOT pelo ssh, usar chaves ao invés de senha
+- Desabilitar IPV6
+- Configurar o serviço de e-mail para enviar ao administrador sobre os problemas encontrados
+- Restringir o acesso ao servidor por terceiros
+- Usar sudo ao invés do su, pois o sudo permite restringir programas e aparece nos logs o su não
+- Colocar senha na BIOS
+- Alterar banners para avisar aos usuários que executarem algum serviço
+- Modificar os atributos especiais dos arquivos de acordo com a necessidade (chattr)
+- Analisar as permissões especiais dos arquivos (SUID, GUID e STICK BIT)
+- Configurar as contas usando o PAM
+- Gerenciar bloqueio de contas de usuários para evitar ataques de força bruta
+- Habilitar serviços de proteção como SELinux
+- Habilitar serviços de logs e auditoria (audit, syslog)
+- Utilizar firewall para bloqueio de portas e conexões desnecessárias
+- Validação dos arquivos por meio de hashs (aide)
+- Utilização de antivírus para verificação dos arquivos
+- Utilização de uma VPN para conectar em máquinas internas para depois acessar outros serviços internos sem expor os mesmos na internet
+- Utilizar serviços de relógios atualizados
+- Bloqueio de sessões de terminais (vlock)
+- Não utilizar as configurações padrões dos serviços dentro do servidor
+- Restringir dispositivos USB
+- Desabilitar teclas mágicas
+- Desabilitar montagem dinâmica de sistemas de arquivos
+- Redundância de conexões de rede
+- Utilizar chaves de criptografia para proteger a conexão sempre que possível
+- Analisar os programas que fazem parte do GTFOBins
+- Analisar a necessidade de ter programas que permitem uma conexão reversa
+- Analisar as configurações do Kernel (módulos, randomização de memória, ponteiros e logs)
