@@ -22,7 +22,7 @@
 - Modificar os atributos especiais dos arquivos de acordo com a necessidade (chattr)
 - Analisar as permissões especiais dos arquivos (SUID, GUID e STICK BIT)
 - Configurar as contas usando o PAM
-- Gerenciar bloqueio de contas de usuários para evitar ataques de força bruta
+- Gerenciar bloqueio de contas de usuários e senhas para evitar ataques de força bruta
 - Habilitar serviços de proteção como SELinux
 - Habilitar serviços de logs e auditoria (audit, syslog)
 - Utilizar firewall para bloqueio de portas e conexões desnecessárias
