@@ -6,6 +6,8 @@
 - Validar a assinatura digital de todos os programas
 - Analisar as permissões da partição de acordo com o serviço (samba, e-mail e etc)
 - Usar redundância de discos RAID ou LVM
+- Utilizar sistemas de arquivos resilientes (ZFS ou XFS)
+- Avaliar a solução de acordo com capex e opex
 - Instalação mínima de pacotes e programas
 - Manter os serviços atualizadas
 - Desabilitar serviços desnecessários com systemctl
